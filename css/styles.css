@@ -12,6 +12,31 @@ footer (secondary bg color) #2F303A */
 /* footer text primary color #FFFFFF 
     secondary text color rgba(255, 255, 255, 0.6) */
 
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+    img {
+        display: inline-block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+
+
     :root {
         --primary-text-color: #757575;
         --title-text-color: #212121;
@@ -25,6 +50,12 @@ footer (secondary bg color) #2F303A */
     body {
         background-color: var(--primary-bg-color);
         color: var(--primary-text-color);
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     .logo {
@@ -56,8 +87,15 @@ footer (secondary bg color) #2F303A */
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
+
         background-color: var(--accent-color);
         color: #FFFFFF;
+
+        border-radius: 4px;
+        padding: 10px 32px;
+        border: 0px;
+        min-width: 200px;
+        display: inline-block;
     }
 
     .btn {
@@ -67,8 +105,13 @@ footer (secondary bg color) #2F303A */
         line-height: 1.62;
         text-align: center;
         letter-spacing: 0.03em;
+
         background-color: var(--primary-button-color);
         color: var(--title-text-color);
+
+        border-radius: 4px;
+        padding: 6px 22px;
+        border: 0px;
     } 
 
     .btn:hover,
@@ -81,6 +124,27 @@ footer (secondary bg color) #2F303A */
         color: #FFFFFF;
     }
 
+    .conteiner {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        outline: 2px solid tomato;
+    }
+
+    .feature-section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+
+        background-color: greenyellow;
+    }
+
+    .specialization {
+        padding-bottom: 94px;
+
+        background-color: tan;
+    }
+
     .feature {
         font-family: Roboto, sans-serif;
         font-weight: 700;
@@ -89,6 +153,7 @@ footer (secondary bg color) #2F303A */
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--title-text-color);
+        margin-bottom: 10px;
     }
 
     .feature-item {
@@ -107,6 +172,7 @@ footer (secondary bg color) #2F303A */
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--title-text-color);
+        margin-bottom: 50px;
     }
 
     .team {
@@ -117,6 +183,9 @@ footer (secondary bg color) #2F303A */
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--title-text-color);
+        /* margin or padding????? */
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
 
     .team-item {
@@ -126,10 +195,12 @@ footer (secondary bg color) #2F303A */
         line-height: 1.187;
         text-align: center;
         letter-spacing: 0.03em;
+        margin-bottom: 30px;
     }
 
     .hero {
         background-color: var(--secondary-bg-color);
+        text-align: center;
     }
 
     .hero-title {
@@ -137,17 +208,22 @@ footer (secondary bg color) #2F303A */
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+        margin-bottom: 30px;
     }
 
     .section-team {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        
         background-color: #F5F4FA;
     }
 
     .list {
         list-style: none;
+        padding: 0px;
+        margin: 0px;
     }
 
     /* Header */
@@ -188,6 +264,11 @@ footer (secondary bg color) #2F303A */
         background-color: var(--secondary-bg-color);
     }
 
+    .footer {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
     address {
         font-style: normal;
     }
@@ -209,6 +290,8 @@ footer (secondary bg color) #2F303A */
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #FFFFFF;
+
+        margin-bottom: 9px;
     }
 
     .contacts-footer {
@@ -219,6 +302,8 @@ footer (secondary bg color) #2F303A */
         text-decoration: none;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+
+        margin-bottom: 9px;
     }
 
     /* ./Portfolio.html */
@@ -230,6 +315,8 @@ footer (secondary bg color) #2F303A */
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--title-text-color);
+
+        margin-bottom: 4px;
     }
 
     .examples-item {
@@ -239,6 +326,8 @@ footer (secondary bg color) #2F303A */
         line-height: 1.87;
         letter-spacing: 0.03em;
         color: var(--primary-text-color);
+
+        margin-bottom: 20px;
     }
 
     /* Current page */
