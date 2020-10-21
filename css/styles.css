@@ -58,6 +58,12 @@ footer (secondary bg color) #2F303A */
         height: auto;
     }
 
+    .list {
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+    }
+
     .logo {
         font-family: Raleway, sans-serif;
         font-weight: 700;
@@ -79,6 +85,12 @@ footer (secondary bg color) #2F303A */
     }
 
     .hero-btn {
+        border-radius: 4px;
+        padding: 10px 32px;
+        border: 0px;
+        min-width: 200px;
+        display: inline-block;
+
         font-family: Roboto, sans-serif;
         font-weight: 700;
         font-size: 16px;
@@ -90,15 +102,13 @@ footer (secondary bg color) #2F303A */
 
         background-color: var(--accent-color);
         color: #FFFFFF;
-
-        border-radius: 4px;
-        padding: 10px 32px;
-        border: 0px;
-        min-width: 200px;
-        display: inline-block;
     }
 
     .btn {
+        border-radius: 4px;
+        padding: 6px 22px;
+        border: 0px;
+
         font-family: Roboto, sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -108,10 +118,6 @@ footer (secondary bg color) #2F303A */
 
         background-color: var(--primary-button-color);
         color: var(--title-text-color);
-
-        border-radius: 4px;
-        padding: 6px 22px;
-        border: 0px;
     } 
 
     .btn:hover,
@@ -124,7 +130,7 @@ footer (secondary bg color) #2F303A */
         color: #FFFFFF;
     }
 
-    .conteiner {
+    .container {
         width: 1200px;
         margin-left: auto;
         margin-right: auto;
@@ -146,6 +152,8 @@ footer (secondary bg color) #2F303A */
     }
 
     .feature {
+        margin-bottom: 10px;
+
         font-family: Roboto, sans-serif;
         font-weight: 700;
         font-size: 14px;
@@ -153,7 +161,6 @@ footer (secondary bg color) #2F303A */
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--title-text-color);
-        margin-bottom: 10px;
     }
 
     .feature-item {
@@ -165,6 +172,8 @@ footer (secondary bg color) #2F303A */
     }
 
     .section-title {
+        margin-bottom: 50px;
+
         font-family: Roboto, sans-serif;
         font-weight: 700;
         font-size: 36px;
@@ -172,10 +181,13 @@ footer (secondary bg color) #2F303A */
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--title-text-color);
-        margin-bottom: 50px;
     }
 
     .team {
+        /* margin or padding????? */
+        margin-top: 30px;
+        margin-bottom: 10px;
+
         font-family: Roboto, sans-serif;
         font-weight: 500;
         font-size: 16px;
@@ -183,19 +195,17 @@ footer (secondary bg color) #2F303A */
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--title-text-color);
-        /* margin or padding????? */
-        margin-top: 30px;
-        margin-bottom: 10px;
     }
 
     .team-item {
+        margin-bottom: 30px;
+
         font-family: Roboto, sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.187;
         text-align: center;
         letter-spacing: 0.03em;
-        margin-bottom: 30px;
     }
 
     .hero {
@@ -204,13 +214,14 @@ footer (secondary bg color) #2F303A */
     }
 
     .hero-title {
+        margin-bottom: 30px;
+
         font-family: Roboto, sans-serif;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        margin-bottom: 30px;
     }
 
     .section-team {
@@ -220,15 +231,32 @@ footer (secondary bg color) #2F303A */
         background-color: #F5F4FA;
     }
 
-    .list {
-        list-style: none;
-        padding: 0px;
-        margin: 0px;
-    }
-
     /* Header */
 
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+    }
+
+    .site-nav {
+        display: flex;
+        margin-left: 93px;
+    }
+
+    .site-nav li:not(:last-child) {
+        margin-right: 50px;
+    }
+
     .nav-link {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
         font-family: Roboto, sans-serif;
         font-weight: 500;
         font-size: 14px;
@@ -243,7 +271,20 @@ footer (secondary bg color) #2F303A */
         color: var(--accent-color);
     }
 
+    .contacts {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .contacts li:not(:last-child) {
+        margin-right: 50px;
+    }
+
     .contacts-header {
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+
         font-family: Roboto, sans-serif;
         font-weight: 500;
         font-size: 14px;
@@ -284,17 +325,19 @@ footer (secondary bg color) #2F303A */
     }
 
     .address {
+        margin-bottom: 9px;
+
         font-family: Roboto, sans-serif;
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: #FFFFFF;
-
-        margin-bottom: 9px;
     }
 
     .contacts-footer {
+        margin-bottom: 9px;
+
         font-family: Roboto, sans-serif;
         font-weight: 400;
         font-size: 14px;
@@ -302,32 +345,30 @@ footer (secondary bg color) #2F303A */
         text-decoration: none;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
-
-        margin-bottom: 9px;
     }
 
     /* ./Portfolio.html */
 
     .examples {
+        margin-bottom: 4px;
+
         font-family: Roboto, sans-serif;
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--title-text-color);
-
-        margin-bottom: 4px;
     }
 
     .examples-item {
+        margin-bottom: 20px;
+
         font-family: Roboto, sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.87;
         letter-spacing: 0.03em;
         color: var(--primary-text-color);
-
-        margin-bottom: 20px;
     }
 
     /* Current page */
