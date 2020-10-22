@@ -134,6 +134,8 @@ footer (secondary bg color) #2F303A */
         width: 1200px;
         margin-left: auto;
         margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
 
         outline: 2px solid tomato;
     }
@@ -143,12 +145,6 @@ footer (secondary bg color) #2F303A */
         padding-bottom: 94px;
 
         background-color: greenyellow;
-    }
-
-    .specialization {
-        padding-bottom: 94px;
-
-        background-color: tan;
     }
 
     .feature {
@@ -169,6 +165,21 @@ footer (secondary bg color) #2F303A */
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
+    }
+
+    .specialization-section {
+        padding-bottom: 94px;
+
+        background-color: tan;
+    }
+
+    .specialization {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+
+    .specialization li:not(:last-child) {
+        margin-right: 30px;
     }
 
     .section-title {
@@ -348,6 +359,24 @@ footer (secondary bg color) #2F303A */
     }
 
     /* ./Portfolio.html */
+
+    .portfolio {
+        background-color: khaki;
+    }
+
+    .filter {
+        display: flex;
+        justify-content: center;
+        /* paddind or margin???? */
+        padding-top: 94px;
+        padding-bottom: 50px;
+
+        background-color: aquamarine;
+    }
+
+    .filter li:not(:last-child) {
+        margin-right: 8px;
+    }
 
     .examples {
         margin-bottom: 4px;
