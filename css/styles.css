@@ -396,6 +396,12 @@ footer (secondary bg color) #2F303A */
 
     /* ./Portfolio.html */
 
+    .line {
+        display: flex;
+        border: 1px solid #ECECEC;
+        flex-grow: 1;
+    }
+
     .filter {
         display: flex;
         justify-content: center;
